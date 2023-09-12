@@ -1,14 +1,13 @@
-
 /* 
     Alle kleuren voor de klassen lijst 
     Elke student heeft een eigen kleur
 */
 :root {
     --kleur1: #ffff;
-    --kleur2: #ffd2ef; 
-    --kleur3: #abebff; 
-    --kleur4: #4981ca; 
-    --kleur5: #b23cb8; 
+    --kleur2: #ffd2ef;
+    --kleur3: #abebff;
+    --kleur4: #4981ca;
+    --kleur5: #b23cb8;
 }
 
 ul.card-container {
@@ -20,14 +19,6 @@ ul.card-container {
     grid-gap: 1rem;
     justify-items: center;
     align-items: center;
-    
-
-    
-
-
-    
-
-
 }
 
 ul .card {
@@ -36,6 +27,7 @@ ul .card {
 }
 
 ul .card .front {
+    position: relative;
     width: 100%;
     height: 100%;
 }
@@ -49,33 +41,27 @@ ul .card img {
     object-position: center;
 }
 
-ul .card .overlay {
+ul .card .overlay{
     display: none;
+}
+
+ul .card:hover .overlay {
+    display: block;
+    position: absolute;
+    /* complete middle */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* color */
+    color: var(--kleur1);
 }
 
 ul .card .back {
     display: none;
 }
 
-
-
-
-
-
-h1{
-font-family: 'MuseoModerno', cursive;
-font-family: 'Russo One', sans-serif;
-font-size: 80;
+h1 {
+    font-family: "MuseoModerno", cursive;
+    font-family: "Russo One", sans-serif;
+    font-size: 80;
 }
-
-
-
-
-
-
-
-
-
-
-
-
