@@ -1,0 +1,50 @@
+
+/* 
+    Alle kleuren voor de klassen lijst 
+    Elke student heeft een eigen kleur
+*/
+:root {
+    --kleur1: #ffff;
+    --kleur2: #ffd2ef; 
+    --kleur3: #abebff; 
+    --kleur4: #4981ca; 
+    --kleur5: #b23cb8; 
+}
+
+ul.card-container {
+    background-color: red;
+    list-style: none;
+
+}
+
+li {
+    padding: 1rem;
+    background-color: blue;
+
+}
+
+
+
+
+
+ul img {
+    max-height: 100px;
+    width: auto;
+}
+
+h1{
+    font-family: 'MuseoModerno', cursive;
+font-family: 'Russo One', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
