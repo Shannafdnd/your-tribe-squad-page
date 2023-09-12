@@ -33,6 +33,10 @@ ul .card .front {
 }
 
 ul .card img {
+    /* random duration */
+    animation-duration: 3s;
+    animation-name: bubble-anim;
+    animation-iteration-count: infinite;
     border-radius: 50%;
 
     width: 100%;
@@ -41,7 +45,7 @@ ul .card img {
     object-position: center;
 }
 
-ul .card .overlay{
+ul .card .overlay {
     display: none;
 }
 
@@ -64,4 +68,31 @@ h1 {
     font-family: "MuseoModerno", cursive;
     font-family: "Russo One", sans-serif;
     font-size: 80;
+}
+
+@keyframes bubble-anim {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scaleY(0.95) scaleX(1.05);
+    }
+
+    48% {
+        transform: scaleY(1.1) scaleX(0.9);
+    }
+
+    68% {
+        transform: scaleY(0.98) scaleX(1.02);
+    }
+
+    80% {
+        transform: scaleY(1.02) scaleX(0.98);
+    }
+
+    97%,
+    100% {
+        transform: scale(1);
+    }
 }
