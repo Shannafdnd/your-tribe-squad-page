@@ -82,32 +82,30 @@ body {
 	place-items:center;
 }
 
-
-img:nth-of-type(5n + 1) {
+.card:nth-of-type(5n + 1) img {
 	animation-duration:13s; 
 	animation-delay:-5s;
 }
 
-img:nth-of-type(5n + 2) {
+.card:nth-of-type(5n + 2) img {
 	animation-duration:18s; 
 	animation-delay:-18s;
 }
 
-img:nth-of-type(5n + 3) {
+.card:nth-of-type(5n + 3) img {
 	animation-duration:15s;
 	animation-delay:-11s;
 }
 
-img:nth-of-type(5n + 4) {
+.card:nth-of-type(5n + 4) img {
 	animation-duration:10s;
 	animation-delay:-8s;
 }
 
-img:nth-of-type(5n + 5) {
+.card:nth-of-type(5n + 5) img {
 	animation-duration:17s; 
 	animation-delay:0s;
 }
-
 
 @keyframes bubble {
 	0% {
