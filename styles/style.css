@@ -12,14 +12,13 @@
 }
 
 ul.card-container {
-    /* align-items: center;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-items: center;*/
-    list-style-type: none; 
+    list-style-type: none;
 
     /* grid */
+}
+
+ul.card-container li {
+	float: left;
 }
 
 ul .card {
@@ -35,14 +34,15 @@ ul .card .front {
 
 ul .card img {
     width:10em;
+	height: 10em;
 	border-radius:50%;
 	display:block;
-	
-	scale:1.1 .9;
+	object-fit: fill;
 	
 	animation-name:bubble;
 	animation-duration:20s;
 	animation-iteration-count:infinite;
+	
     /* random duration */
 }
 
@@ -53,10 +53,10 @@ ul .card .overlay {
 ul .card:hover .overlay {
     color: var(--kleur1);
     display: block;
-    left: 50%;
     position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
+	text-align: center;
+	width: 10em;
+	top: 4em;
 
     /* complete middle */
     /* color */
@@ -75,11 +75,7 @@ h1 {
 body {
 	margin:0;
 	height:100dvh;
-	display:grid;
-	gap:1em;
-	grid-template-columns: repeat( auto-fit, minmax(10em, 1fr) );
-	place-content:center;
-	place-items:center;
+	display:flex;
 }
 
 .card:nth-of-type(5n + 1) img {
