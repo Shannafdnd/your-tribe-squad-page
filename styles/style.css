@@ -95,6 +95,7 @@ ul .card .front {
 }
 
 ul .card img {
+    position: relative;
     width:10em;
     height: 10em;
     border-radius:50%;
@@ -104,6 +105,7 @@ ul .card img {
     animation-name:bubble;
     animation-duration:20s;
     animation-iteration-count:infinite;
+    animation-timing-function:ease-in-out;
     /* random duration */
 }
 
@@ -166,48 +168,48 @@ body {
 
 @keyframes bubble {
 	0% {
+        top: 100vh;
 		scale:1.07 .93;
-		animation-timing-function:ease-in;
 	}
 	10% {
+        top: 90vh;
 		scale:.96 1.04;
-		animation-timing-function:ease-in-out;
 	}
 	20% {
+        top: 80vh;
 		scale:1.02 .98;
-		animation-timing-function:ease-in-out;
 	}
 	30% {
+        top: 70vh;
 		scale:.98 1.02;
-		animation-timing-function:ease-in-out;
 	}
 	40% {
+        top: 60vh;
 		scale:1.04 .96;
-		animation-timing-function:ease-in-out;
 	}
 	50% {
+        top: 50vh;
 		scale:.93 1.07;
-		animation-timing-function:ease-in-out;
 	}
 	60% {
+        top: 40vh;
 		scale:1.04 .96;
-		animation-timing-function:ease-in-out;
 	}
 	70% {
+        top: 30vh;
 		scale:.98 1.02;
-		animation-timing-function:ease-in-out;
 	}
 	80% {
+        top: 20vh;
 		scale:1.02 .98;
-		animation-timing-function:ease-in-out;
 	}
 	90% {
+        top: 10vh;
 		scale:.96 1.04;
-		animation-timing-function:ease-in-out;
 	}
 	100% {
+        top: 0;
 		scale:1.07 .93;
-		animation-timing-function:ease-out;
 	}
 }
 
