@@ -16,25 +16,28 @@ body {
 }
 
 header {
-    /* centre */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    /* max-width: 40rem; */
-    /* margin-left: 1rem; */
-
-
 }
 
 h1 {
-
     padding: 20px;
     color: white;
     border-radius: 100px;
     font-family: "MuseoModerno", cursive;
     width: fit-content;
+}
+h1 {
+    font-family: "MuseoModerno", cursive;
+    font-family: "Russo One", sans-serif;
+    font-size: 80;
+}
+
+body {
+	margin:0;
+	height:100dvh;
 }
 
 header h1:nth-child(1) {
@@ -130,17 +133,7 @@ ul .card .back {
     display: none;
 }
 
-h1 {
-    font-family: "MuseoModerno", cursive;
-    font-family: "Russo One", sans-serif;
-    font-size: 80;
-}
-
-body {
-	margin:0;
-	height:100dvh;
-}
-
+/*this makes the bubbles move at different times*/
 .card:nth-of-type(5n + 1) img {
 	animation-duration:13s;
 	animation-delay:-5s;
@@ -166,6 +159,7 @@ body {
 	animation-delay:0s;
 }
 
+/*bubble animatie*/
 @keyframes bubble {
 	0% {
         top: 100vh;
@@ -213,6 +207,7 @@ body {
 	}
 }
 
+/*header animatie*/
 @keyframes banner-move {
 
     0% {
@@ -247,7 +242,6 @@ body {
 
 
 /*Bubbles decoratie*/
-
 @keyframes bubble-anim {
     0% {
       transform: scale(1);
