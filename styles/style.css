@@ -1,3 +1,7 @@
+/*
+    Alle kleuren voor de klassen lijst
+    Elke student heeft een eigen kleur
+*/
 :root {
 
     --kleur1: #ffff;
@@ -8,83 +12,80 @@
 }
 
 body {
-    background: linear-gradient(90deg, #00DFFD 0%, rgba(233, 0, 253, 0.00) 137.56%);
     margin: 0;
 }
 
 header {
-    align-items: center;
+    /* centre */
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin-left: 1rem;
-    max-width: 40rem;
+    align-items: center;
+    flex-direction: column;
+
+    /* max-width: 40rem; */
+    /* margin-left: 1rem; */
+
+
 }
 
 h1 {
-         border-radius: 100px;
-         color: white;
-         font-family: "MuseoModerno", cursive;
-         padding: 20px;
-         width: fit-content;
-     }
 
-header h1 {
-    animation-delay: -4;
-    animation-direction: alternate;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-name: banner-move;
-    background-color: var(--kleur5);
-    font-size: 22px;
-    font-weight: 500;
-    left: 200px;
-    margin-right: 3rem;
-    position: absolute;
-    top:0;
+    padding: 20px;
+    color: white;
+    border-radius: 100px;
+    font-family: "MuseoModerno", cursive;
+    width: fit-content;
 }
 
-header h2 {
-    animation-delay: -1;
-    animation-direction: alternate;
-    animation-duration: 7s;
+header h1:nth-child(1) {
+    background-color: var(--kleur5);
+    /* margin-right: 3rem; */
     animation-iteration-count: infinite;
     animation-name: banner-move;
+    /* animation-direction: alternate; */
+    animation-duration: 10s;
+    animation-delay: -4;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+header h1:nth-child(2) {
     background-color: var(--kleur4);
-    border-radius: 100px;
-    color: white;
+    /* margin-left: 3rem; */
+    animation-iteration-count: infinite;
+    animation-name: banner-move;
+    /* animation-direction: alternate; */
+    animation-duration: 7s;
+    animation-delay: -1;
     font-weight: 900;
-    left: 300px;
-    margin-left: 3rem;
-    padding: 20px;
-    position: absolute;
-    top: 50px;
 }
 
 ul.card-container {
-  align-items: center;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  list-style-type: none;
-  margin: 0;
-  margin-block-end: 0;
-  margin-block-start: 0;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
-  padding: 0;
-  padding-inline-start: 0px;
+  /* align-items: center;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
 
 ul.card-container li {
-    float: left;
+	float: left;
 }
 
 ul .card {
     height: 280px;
+    width: 280px;
     margin-bottom: 1rem;
     padding: 1rem;
-    width: 280px;
+
 }
 
 ul .card .front {
@@ -94,16 +95,18 @@ ul .card .front {
 }
 
 ul .card img {
-    animation-duration:20s;
-    animation-iteration-count:infinite;
-    animation-name:bubble;
-    animation-timing-function:ease-in-out;
-    border-radius:50%;
-    display:block;
-    height: 10em;
-    object-fit: fill;
     position: relative;
     width:10em;
+    height: 10em;
+    border-radius:50%;
+    display:block;
+    object-fit: fill;
+
+    animation-name:bubble;
+    animation-duration:20s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in-out;
+    /* random duration */
 }
 
 ul .card .overlay {
@@ -115,99 +118,102 @@ ul .card:hover .overlay {
     display: block;
     position: absolute;
     text-align: center;
-    top: 4em;
     width: 10em;
+    top: 4em;
+
+    /* complete middle */
+    /* color */
 }
 
 ul .card .back {
     display: none;
 }
 
-h1, h2 {
+h1 {
     font-family: "MuseoModerno", cursive;
     font-family: "Russo One", sans-serif;
     font-size: 80;
 }
 
 body {
-    display:flex;
-    height:100dvh;
-    margin:0;
+	margin:0;
+	height:100dvh;
 }
 
 .card:nth-of-type(5n + 1) img {
-    animation-delay:-5s;
-    animation-duration:13s;
+	animation-duration:13s;
+	animation-delay:-5s;
 }
 
 .card:nth-of-type(5n + 2) img {
-    animation-delay:-18s;
-    animation-duration:18s;
+	animation-duration:18s;
+	animation-delay:-18s;
 }
 
 .card:nth-of-type(5n + 3) img {
-    animation-delay:-11s;
-    animation-duration:15s;
+	animation-duration:15s;
+	animation-delay:-11s;
 }
 
 .card:nth-of-type(5n + 4) img {
-    animation-delay:-8s;
-    animation-duration:10s;
+	animation-duration:10s;
+	animation-delay:-8s;
 }
 
 .card:nth-of-type(5n + 5) img {
-    animation-delay:0s;
-    animation-duration:17s;
+	animation-duration:17s;
+	animation-delay:0s;
 }
 
 @keyframes bubble {
-    0% {
-        scale:1.07 .93;
+	0% {
         top: 100vh;
-    }
-    10% {
-        scale:.96 1.04;
+		scale:1.07 .93;
+	}
+	10% {
         top: 90vh;
-    }
-    20% {
-        scale:1.02 .98;
+		scale:.96 1.04;
+	}
+	20% {
         top: 80vh;
-    }
-    30% {
-        scale:.98 1.02;
+		scale:1.02 .98;
+	}
+	30% {
         top: 70vh;
-    }
-    40% {
-        scale:1.04 .96;
+		scale:.98 1.02;
+	}
+	40% {
         top: 60vh;
-    }
-    50% {
-        scale:.93 1.07;
+		scale:1.04 .96;
+	}
+	50% {
         top: 50vh;
-    }
-    60% {
-        scale:1.04 .96;
+		scale:.93 1.07;
+	}
+	60% {
         top: 40vh;
-    }
-    70% {
-        scale:.98 1.02;
+		scale:1.04 .96;
+	}
+	70% {
         top: 30vh;
-    }
-    80% {
-        scale:1.02 .98;
+		scale:.98 1.02;
+	}
+	80% {
         top: 20vh;
-    }
-    90% {
-        scale:.96 1.04;
+		scale:1.02 .98;
+	}
+	90% {
         top: 10vh;
-    }
-    100% {
-        scale:1.07 .93;
+		scale:.96 1.04;
+	}
+	100% {
         top: 0;
-    }
+		scale:1.07 .93;
+	}
 }
 
 @keyframes banner-move {
+
     0% {
         margin-left: 0;
         margin-right: 0;
@@ -227,13 +233,17 @@ body {
     100% {
         margin-left: 0rem;
         margin-right: 0rem;
+
     }
+
 }
 
 @media only screen and (max-width: 600px) {
     body {
       background-color: lightblue;
+    }
   }
+
 
 /*Bubbles decoratie*/
 
@@ -552,3 +562,4 @@ body {
       position: absolute;
       width: 180px;
     }
+
