@@ -74,6 +74,7 @@ ul.card-container {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 0px;
+
 }
 
 ul.card-container li {
@@ -85,7 +86,7 @@ ul .card {
     width: 280px;
     margin-bottom: 1rem;
     padding: 1rem;
-
+    
 }
 
 ul .card .front {
@@ -106,7 +107,7 @@ ul .card img {
     animation-duration:20s;
     animation-iteration-count:infinite;
     animation-timing-function:ease-in-out;
-    /* random duration */
+    /* random duration */ 
 }
 
 ul .card .overlay {
