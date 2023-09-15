@@ -12,6 +12,8 @@
 }
 
 body {
+    background: linear-gradient(90deg, #00DFFD 0%, rgba(233, 0, 253, 0.00) 137.56%);
+
     margin: 0;
 }
 
