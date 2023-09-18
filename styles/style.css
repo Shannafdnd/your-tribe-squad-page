@@ -12,8 +12,8 @@
   --kleur1: #ffff;
   --kleur2: #ffd2ef;
   --kleur3: #abebff;
-  --kleur4: #4981ca;
-  --kleur5: #b23cb8;
+  --kleur4: #a8bedd;
+  --kleur5: #7fadb9;
 }
 
 body {
@@ -59,7 +59,7 @@ header h1 {
   /* animation-direction: alternate; */
   animation-duration: 10s;
   animation-delay: -4;
-  font-size: 22px;
+  font-size: 40px;
   font-weight: 500;
 }
 
