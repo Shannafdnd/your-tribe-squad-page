@@ -91,6 +91,7 @@ ul.card-container {
 }
 
 ul .card {
+  cursor: pointer;
   display: block;
   padding: 1rem;
   width: 10rem;
