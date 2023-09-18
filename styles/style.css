@@ -2,6 +2,11 @@
     Alle kleuren voor de klassen lijst
     Elke student heeft een eigen kleur
 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
 :root {
 
   --kleur1: #ffff;
@@ -46,7 +51,7 @@ body {
 
 }
 
-header h1:nth-child(1) {
+header h1 {
   background-color: var(--kleur5);
   /* margin-right: 3rem; */
   animation-iteration-count: infinite;
@@ -58,7 +63,13 @@ header h1:nth-child(1) {
   font-weight: 500;
 }
 
-header h1:nth-child(2) {
+header h2 {
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 100px;
+  font-family: "MuseoModerno", cursive;
+  width: fit-content;
+  font-size: 80;
   background-color: var(--kleur4);
   /* margin-left: 3rem; */
   animation-iteration-count: infinite;
@@ -70,31 +81,26 @@ header h1:nth-child(2) {
 }
 
 ul.card-container {
-  /* align-items: center;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-items: center;*/
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
 
-}
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
 
-ul.card-container li {
-  float: left;
 }
 
 ul .card {
-  height: 280px;
-  width: 280px;
-  margin-bottom: 1rem;
+
+  display: block;
   padding: 1rem;
+  width: 10rem;
+  /* height: 6rem; */
+  /* background: tomato; */
+  border-radius: 1rem;
+  display: block;
+    
 
 }
 
@@ -102,6 +108,12 @@ ul .card .front {
   height: 100%;
   position: relative;
   width: 100%;
+
+  object-fit: fill;
+  animation-name: bubble-move;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 ul .card img {
@@ -145,13 +157,15 @@ ul .card .back {
   display: none;
 }
 
+
+
 /*this makes the bubbles move at different times*/
 .card:nth-of-type(5n + 1) img {
   animation-duration: 13s;
   animation-delay: -5s;
 }
 
-.card:nth-of-type(5n + 2) img {
+.card:nth-of-type(5n + 2) img{
   animation-duration: 18s;
   animation-delay: -18s;
 }
@@ -174,63 +188,100 @@ ul .card .back {
 /*bubble animatie*/
 @keyframes bubble {
   0% {
-    top: 100vh;
     scale: 1.07 .93;
   }
 
   10% {
-    top: 90vh;
     scale: .96 1.04;
   }
 
   20% {
-    top: 80vh;
     scale: 1.02 .98;
   }
 
   30% {
-    top: 70vh;
     scale: .98 1.02;
   }
 
   40% {
-    top: 60vh;
     scale: 1.04 .96;
   }
 
   50% {
-    top: 50vh;
     scale: .93 1.07;
   }
 
   60% {
-    top: 40vh;
     scale: 1.04 .96;
   }
 
   70% {
-    top: 30vh;
     scale: .98 1.02;
   }
 
   80% {
-    top: 20vh;
     scale: 1.02 .98;
   }
 
   90% {
-    top: 10vh;
     scale: .96 1.04;
   }
 
   100% {
-    top: 0;
     scale: 1.07 .93;
   }
 }
 
+
+
+
+@keyframes bubble-move {
+  0% {
+    top: 100vh;
+  }
+
+  10% {
+    top: 80vh;
+  }
+
+  20% {
+    top: 60vh;
+  }
+
+  30% {
+    top: 40vh;
+  }
+
+  40% {
+    top: 20vh;
+  }
+
+  50% {
+    top: 0vh;
+  }
+
+  60% {
+    top: -20vh;
+  }
+
+  70% {
+    top: -40vh;
+  }
+
+  80% {
+    top: -60vh;
+  }
+
+  90% {
+    top: -84vh;
+  }
+
+  100% {
+    top: -115vh;
+  }
+}
 /*header animatie*/
-@keyframes banner-move {
+/* @keyframes banner-move {
 
   0% {
     margin-left: 0;
@@ -258,7 +309,7 @@ ul .card .back {
 
   }
 
-}
+} */
 
 @media only screen and (max-width: 600px) {
   body {
@@ -268,7 +319,7 @@ ul .card .back {
 
 
 /*Bubbles decoratie*/
-@keyframes bubble-anim {
+/* @keyframes bubble-anim {
   0% {
     transform: scale(1);
   }
@@ -292,14 +343,14 @@ ul .card .back {
   97%,
   100% {
     transform: scale(1);
-  }
+  } */
 
 
 
   /* KEYFRAMES */
 
 
-}
+/* } */
 
 @-moz-keyframes animateBubble {
   0% {
@@ -516,6 +567,7 @@ ul .card .back {
 /* OBJECTS */
 
 .bubble {
+  z-index: -100;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
