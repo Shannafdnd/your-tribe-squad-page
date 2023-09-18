@@ -139,6 +139,14 @@ ul .card:hover .overlay {
   display: block;
 }
 
+ul .card:hover img.profile-pic {
+  filter: blur(5px);
+}
+
+ul .card:hover img {
+  filter: brightness(0.75);
+}
+
 ul .card:hover { /* pause both animatios on hover and move to front so no other card comes of the current one */
   animation-play-state: paused, paused; /* TODO: for some reason only 1 gets paused */
   z-index: 1;
