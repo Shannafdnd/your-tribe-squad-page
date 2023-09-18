@@ -110,7 +110,7 @@ ul .card .front {
   width: 100%;
 
   object-fit: fill;
-  animation: 20s ease-in-out infinite bubble-move, 4s ease-in-out infinite alternate sideWays;
+  animation: 20s ease-in-out infinite running bubble-move, 4s ease-in-out infinite alternate running sideWays;
 }
 
 ul .card img {
@@ -136,18 +136,23 @@ ul .card img {
 
 ul .card .overlay {
   display: none;
-}
-
-ul .card:hover .overlay {
   color: var(--kleur1);
-  display: block;
   position: absolute;
   text-align: center;
   width: 10em;
   top: 4em;
+}
 
-  /* complete middle */
-  /* color */
+ul .card:hover .overlay {
+  display: block;
+}
+
+ul .card:hover .front { /* pause animation on hover */
+  animation-play-state: paused;
+}
+
+ul .card:hover { /* Move to front so no other card comes of the current one */
+  z-index: 1;
 }
 
 ul .card .back {
