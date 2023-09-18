@@ -110,10 +110,7 @@ ul .card .front {
   width: 100%;
 
   object-fit: fill;
-  animation-name: bubble-move;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation: 20s ease-in-out infinite bubble-move, 4s ease-in-out infinite alternate sideWays;
 }
 
 ul .card img {
@@ -159,13 +156,13 @@ ul .card .back {
 
 
 
-/*this makes the bubbles move at different times*/
+/*this makes the bubbles move at different times. add more rows for more randomness*/
 .card:nth-of-type(5n + 1) img {
   animation-duration: 13s;
   animation-delay: -5s;
 }
 
-.card:nth-of-type(5n + 2) img{
+.card:nth-of-type(5n + 2) img {
   animation-duration: 18s;
   animation-delay: -18s;
 }
@@ -183,6 +180,32 @@ ul .card .back {
 .card:nth-of-type(5n + 5) img {
   animation-duration: 17s;
   animation-delay: 0s;
+}
+
+/* These are the delays for the bubble-move and sideWays animations respectively */
+.card:nth-of-type(5n + 1) .front {
+  animation-duration: 18s, 4s;
+  animation-delay: -5s, 2s;
+}
+
+.card:nth-of-type(5n + 2) .front {
+  animation-duration: 28s, 4s;
+  animation-delay: -18s, 4s;
+}
+
+.card:nth-of-type(5n + 3) .front {
+  animation-duration: 25s, 4s;
+  animation-delay: -11s, 0s;
+}
+
+.card:nth-of-type(5n + 4) .front {
+  animation-duration: 23s, 4s;
+  animation-delay: -8s, 1s;
+}
+
+.card:nth-of-type(5n + 5) .front {
+  animation-duration: 20s, 4s;
+  animation-delay: 0s, 3s;
 }
 
 /*bubble animatie*/
@@ -231,9 +254,6 @@ ul .card .back {
     scale: 1.07 .93;
   }
 }
-
-
-
 
 @keyframes bubble-move {
   0% {
