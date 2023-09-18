@@ -81,7 +81,6 @@ header h2 {
 }
 
 ul.card-container {
-
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -92,7 +91,6 @@ ul.card-container {
 }
 
 ul .card {
-
   display: block;
   padding: 1rem;
   width: 10rem;
@@ -100,14 +98,8 @@ ul .card {
   /* background: tomato; */
   border-radius: 1rem;
   display: block;
-    
-
-}
-
-ul .card .front {
-  height: 100%;
+  
   position: relative;
-  width: 100%;
 
   object-fit: fill;
   animation: 20s ease-in-out infinite running bubble-move, 4s ease-in-out infinite alternate running sideWays;
@@ -147,11 +139,8 @@ ul .card:hover .overlay {
   display: block;
 }
 
-ul .card:hover .front { /* pause animation on hover */
-  animation-play-state: paused;
-}
-
-ul .card:hover { /* Move to front so no other card comes of the current one */
+ul .card:hover { /* pause both animatios on hover and move to front so no other card comes of the current one */
+  animation-play-state: paused, paused; /* TODO: for some reason only 1 gets paused */
   z-index: 1;
 }
 
@@ -188,27 +177,27 @@ ul .card .back {
 }
 
 /* These are the delays for the bubble-move and sideWays animations respectively */
-.card:nth-of-type(5n + 1) .front {
+.card:nth-of-type(5n + 1) {
   animation-duration: 18s, 4s;
   animation-delay: -5s, 2s;
 }
 
-.card:nth-of-type(5n + 2) .front {
+.card:nth-of-type(5n + 2) {
   animation-duration: 28s, 4s;
   animation-delay: -18s, 4s;
 }
 
-.card:nth-of-type(5n + 3) .front {
+.card:nth-of-type(5n + 3) {
   animation-duration: 25s, 4s;
   animation-delay: -11s, 0s;
 }
 
-.card:nth-of-type(5n + 4) .front {
+.card:nth-of-type(5n + 4) {
   animation-duration: 23s, 4s;
   animation-delay: -8s, 1s;
 }
 
-.card:nth-of-type(5n + 5) .front {
+.card:nth-of-type(5n + 5) {
   animation-duration: 20s, 4s;
   animation-delay: 0s, 3s;
 }
