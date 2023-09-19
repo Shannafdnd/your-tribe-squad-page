@@ -106,6 +106,11 @@ ul .card {
   animation: 20s ease-in-out infinite running bubble-move, 4s ease-in-out infinite alternate running sideWays;
 }
 
+ul .card:active img {
+  transform: scale(1.5, 0.75);
+  animation-play-state: paused;
+}
+
 ul .card img {
   position: relative;
   width: 10em;
@@ -118,6 +123,7 @@ ul .card img {
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  transition: transform linear 0.1s;
   /* random duration */
 }
 
