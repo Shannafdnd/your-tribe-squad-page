@@ -36,6 +36,7 @@ h1 {
 }
 
 h1 {
+  margin-top: 30px;
   font-family: "MuseoModerno", cursive;
   font-family: "Russo One", sans-serif;
   font-size: 80;
@@ -45,18 +46,13 @@ body {
   margin: 0;
   height: 100dvh;
   background-image: url("../assets/bubblebaclground4.jpeg");
-  /*background-image: url("../assets/neon_bubbles_2.jpeg");
-    background-image: url("../assets/Neon-City-Wallpapers.jpeg");*/
   filter: saturate(3);
-
 }
 
 header h1 {
   background-color: var(--kleur5);
-  /* margin-right: 3rem; */
   animation-iteration-count: infinite;
   animation-name: banner-move;
-  /* animation-direction: alternate; */
   animation-duration: 10s;
   animation-delay: -4;
   font-size: 26px;
@@ -71,10 +67,8 @@ header h2 {
   width: fit-content;
   font-size: 80;
   background-color: var(--kleur4);
-  /* margin-left: 3rem; */
   animation-iteration-count: infinite;
   animation-name: banner-move;
-  /* animation-direction: alternate; */
   animation-duration: 7s;
   animation-delay: -1;
   font-weight: 900;
@@ -95,13 +89,9 @@ ul .card {
   display: block;
   padding: 1rem;
   width: 10rem;
-  /* height: 6rem; */
-  /* background: tomato; */
   border-radius: 1rem;
   display: block;
-  
   position: relative;
-
   object-fit: fill;
   animation: 20s ease-in-out infinite running bubble-move, 4s ease-in-out infinite alternate running sideWays;
 }
@@ -124,7 +114,6 @@ ul .card img {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   transition: transform linear 0.1s;
-  /* random duration */
 }
 
 /*This makes it look like actual bubbles*/
@@ -250,9 +239,6 @@ ul .card .back {
   position: absolute;
   left: 1rem;
   top: 1rem;
-  
-
-  
 }
 
 .nav-button button {
@@ -281,9 +267,7 @@ ul .card .back {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--kleur1);
-
 }
-
 
 .nav-button i {
   color: white
