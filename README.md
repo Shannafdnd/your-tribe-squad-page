@@ -5,8 +5,8 @@
 This project is licensed under the terms of the [MIT license](./LICENSE).
 
 
-Home
-Briefing
+Navigatie:
+
 1. Analyse
 2. Ontwerpen
 3. Bouwen
