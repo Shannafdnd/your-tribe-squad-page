@@ -1,52 +1,52 @@
 
 /*this makes the bubbles move at different times. add more rows for more randomness*/
-.card:nth-of-type(5n + 1) img {
+li:nth-of-type(5n + 1) .card img {
     animation-duration: 13s;
     animation-delay: -5s;
   }
   
-  .card:nth-of-type(5n + 2) img {
+  li:nth-of-type(5n + 2) .card img {
     animation-duration: 18s;
     animation-delay: -18s;
   }
   
-  .card:nth-of-type(5n + 3) img {
+  li:nth-of-type(5n + 3) .card img {
     animation-duration: 15s;
     animation-delay: -11s;
   }
   
-  .card:nth-of-type(5n + 4) img {
+  li:nth-of-type(5n + 4) .card img {
     animation-duration: 10s;
     animation-delay: -8s;
   }
   
-  .card:nth-of-type(5n + 5) img {
+  li:nth-of-type(5n + 5) .card img {
     animation-duration: 17s;
     animation-delay: 0s;
   }
   
   /* These are the delays for the bubble-move and sideWays animations respectively */
-  .card:nth-of-type(5n + 1) {
+  li:nth-of-type(5n + 1) .card {
     animation-duration: 18s, 4s;
     animation-delay: -5s, 2s;
   }
   
-  .card:nth-of-type(5n + 2) {
+  li:nth-of-type(5n + 2) .card {
     animation-duration: 28s, 4s;
     animation-delay: -18s, 4s;
   }
   
-  .card:nth-of-type(5n + 3) {
+  li:nth-of-type(5n + 3) .card {
     animation-duration: 25s, 4s;
     animation-delay: -11s, 0s;
   }
   
-  .card:nth-of-type(5n + 4) {
+  li:nth-of-type(5n + 4) .card {
     animation-duration: 23s, 4s;
     animation-delay: -8s, 1s;
   }
   
-  .card:nth-of-type(5n + 5) {
+  li:nth-of-type(5n + 5) .card {
     animation-duration: 20s, 4s;
     animation-delay: 0s, 3s;
   }
