@@ -8,9 +8,31 @@
         @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&family=Russo+One&display=swap');
       </style>
       <link rel="stylesheet" href="./styles/style.css">
+    
 </head>
 <body>
     <!-- De header met de titel -->
+    <div class="nav-button">
+        <button onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+    </div>
+    <div id="myNav" class="nav-overlay">
+        <div class="overlay-content">
+            <a href="#">Team Pokemon Go</a>
+            <a href="#">Team RuMoKaYa</a>
+            <a href="#">Team Pixel Crafters</a>
+            <a href="#">Team Slay</a>
+            <a href="#">Team JSS</a>
+            <a href="#">Team Gokverslaafde</a>
+        </div>
+        <div class="close-button">
+            <button onclick="toggleNav()">Close
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
     <header>
         <h1>De Squad Opdracht</h1>
         <h2>Klas 1F</h2>
@@ -317,4 +339,6 @@
 
     </div>
 </body>
+<script src="https://kit.fontawesome.com/b1b2df5e00.js" crossorigin="anonymous"></script>
+<script src="./scripts/js/javascript.js"></script>
 </html>
