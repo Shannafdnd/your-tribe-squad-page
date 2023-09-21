@@ -1,6 +1,5 @@
 /*
-    Alle kleuren voor de klassen lijst
-    Elke student heeft een eigen kleur
+Hier zijn wat kleurtjes die we van tevoren erin hebben gezet
 */
 
 * {
@@ -16,8 +15,13 @@
   --kleur5: #7fadb9;
 }
 
+/* De body en alle headers */
+
 body {
   margin: 0;
+  height: 100dvh;
+  background-image: url("../assets/bubblebaclground4.jpeg");
+  filter: saturate(3);
 }
 
 header {
@@ -40,13 +44,6 @@ h2 {
   font-family: "MuseoModerno", cursive;
   font-family: "Russo One", sans-serif;
   font-size: 80;
-}
-
-body {
-  margin: 0;
-  height: 100dvh;
-  background-image: url("../assets/bubblebaclground4.jpeg");
-  filter: saturate(3);
 }
 
 header h1 {
@@ -73,6 +70,8 @@ header h2 {
   animation-delay: -1;
   font-weight: 900;
 }
+
+/* Alle styling van de list bubbels */
 
 ul.card-container {
   list-style: none;
@@ -116,11 +115,10 @@ ul .card img {
   transition: transform linear 0.1s;
 }
 
-/*This makes it look like actual bubbles*/
-.bubble-overlay {
+.bubble-overlay { /*Dit is het plaatje wat de bubbels realistisch laat lijken*/
   opacity: 0.55;
   margin-top: -160px;
-}
+} 
 
 ul .card .overlay {
   display: none;
@@ -224,6 +222,7 @@ ul .card .back {
   width: 180px;
 }
 
+/* Alle styling van de nav */
 
 .nav-overlay {
   display: none;
