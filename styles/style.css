@@ -19,7 +19,9 @@ Hier zijn wat kleurtjes die we van tevoren erin hebben gezet
 
 body {
   margin: 0;
-  height: 100dvh;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
   background-image: url("../assets/bubblebaclground4.jpeg");
   filter: saturate(3);
 }
