@@ -47,6 +47,7 @@ h2 {
 }
 
 header h1 {
+  z-index: 1;
   background-color: var(--kleur5);
   animation-iteration-count: infinite;
   animation-name: banner-move;
@@ -57,6 +58,7 @@ header h1 {
 }
 
 header h2 {
+  z-index: 1;
   padding: 20px;
   color: rgb(255, 255, 255);
   border-radius: 100px;
@@ -92,7 +94,7 @@ ul .card {
   display: block;
   position: relative;
   object-fit: fill;
-  animation: 20s ease-in-out infinite running bubble-move, 4s ease-in-out infinite alternate running sideWays;
+  animation: 20s ease-in-out infinite running bubble-move, 4s ease-in-out infinite alternate running foreground-sideways;
 }
 
 ul .card:active img {
@@ -143,7 +145,7 @@ ul .card:hover img {
 
 ul .card:hover { /* pause both animatios on hover and move to front so no other card comes of the current one */
   animation-play-state: paused, paused; /* TODO: for some reason only 1 gets paused */
-  z-index: 1;
+  z-index: 3;
 }
 
 ul .card .back {

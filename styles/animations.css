@@ -25,7 +25,7 @@ li:nth-of-type(5n + 5) .card img {
   animation-delay: 0s;
 }
 
-/* These are the delays for the bubble-move and sideWays animations respectively */
+/* These are the delays for the bubble-move and sideways animations respectively */
 li:nth-of-type(5n + 1) .card {
   animation-duration: 18s, 4s;
   animation-delay: -5s, 2s;
@@ -55,11 +55,11 @@ li:nth-of-type(5n + 5) .card {
 /* Dit is de animatie van de achtergrond bubbels */
 .x1 {
   -webkit-animation: animateBubble 25s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
+    background-sideways 2s ease-in-out infinite alternate;
   -moz-animation: animateBubble 25s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
+    background-sideways 2s ease-in-out infinite alternate;
   animation: animateBubble 25s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
+    background-sideways 2s ease-in-out infinite alternate;
 
   left: -5%;
   top: 5%;
@@ -71,11 +71,11 @@ li:nth-of-type(5n + 5) .card {
 
 .x2 {
   -webkit-animation: animateBubble 20s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
+    background-sideways 4s ease-in-out infinite alternate;
   -moz-animation: animateBubble 20s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
+    background-sideways 4s ease-in-out infinite alternate;
   animation: animateBubble 20s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
+    background-sideways 4s ease-in-out infinite alternate;
 
   left: 5%;
   top: 80%;
@@ -87,11 +87,11 @@ li:nth-of-type(5n + 5) .card {
 
 .x3 {
   -webkit-animation: animateBubble 28s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
+    background-sideways 2s ease-in-out infinite alternate;
   -moz-animation: animateBubble 28s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
+    background-sideways 2s ease-in-out infinite alternate;
   animation: animateBubble 28s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
+    background-sideways 2s ease-in-out infinite alternate;
 
   left: 10%;
   top: 40%;
@@ -103,11 +103,11 @@ li:nth-of-type(5n + 5) .card {
 
 .x4 {
   -webkit-animation: animateBubble 22s linear infinite,
-    sideWays 3s ease-in-out infinite alternate;
+    background-sideways 3s ease-in-out infinite alternate;
   -moz-animation: animateBubble 22s linear infinite,
-    sideWays 3s ease-in-out infinite alternate;
+    background-sideways 3s ease-in-out infinite alternate;
   animation: animateBubble 22s linear infinite,
-    sideWays 3s ease-in-out infinite alternate;
+    background-sideways 3s ease-in-out infinite alternate;
 
   left: 20%;
   top: 0;
@@ -119,11 +119,11 @@ li:nth-of-type(5n + 5) .card {
 
 .x5 {
   -webkit-animation: animateBubble 29s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
+    background-sideways 4s ease-in-out infinite alternate;
   -moz-animation: animateBubble 29s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
+    background-sideways 4s ease-in-out infinite alternate;
   animation: animateBubble 29s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
+    background-sideways 4s ease-in-out infinite alternate;
 
   left: 30%;
   top: 50%;
@@ -135,11 +135,11 @@ li:nth-of-type(5n + 5) .card {
 
 .x6 {
   -webkit-animation: animateBubble 21s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
+    background-sideways 2s ease-in-out infinite alternate;
   -moz-animation: animateBubble 21s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
+    background-sideways 2s ease-in-out infinite alternate;
   animation: animateBubble 21s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
+    background-sideways 2s ease-in-out infinite alternate;
 
   left: 50%;
   top: 0;
@@ -151,11 +151,11 @@ li:nth-of-type(5n + 5) .card {
 
 .x7 {
   -webkit-animation: animateBubble 20s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
+    background-sideways 2s ease-in-out infinite alternate;
   -moz-animation: animateBubble 20s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
+    background-sideways 2s ease-in-out infinite alternate;
   animation: animateBubble 20s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
+    background-sideways 2s ease-in-out infinite alternate;
 
   left: 65%;
   top: 70%;
@@ -167,11 +167,11 @@ li:nth-of-type(5n + 5) .card {
 
 .x8 {
   -webkit-animation: animateBubble 22s linear infinite,
-    sideWays 3s ease-in-out infinite alternate;
+    background-sideways 3s ease-in-out infinite alternate;
   -moz-animation: animateBubble 22s linear infinite,
-    sideWays 3s ease-in-out infinite alternate;
+    background-sideways 3s ease-in-out infinite alternate;
   animation: animateBubble 22s linear infinite,
-    sideWays 3s ease-in-out infinite alternate;
+    background-sideways 3s ease-in-out infinite alternate;
 
   left: 80%;
   top: 10%;
@@ -183,11 +183,11 @@ li:nth-of-type(5n + 5) .card {
 
 .x9 {
   -webkit-animation: animateBubble 29s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
+    background-sideways 4s ease-in-out infinite alternate;
   -moz-animation: animateBubble 29s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
+    background-sideways 4s ease-in-out infinite alternate;
   animation: animateBubble 29s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
+    background-sideways 4s ease-in-out infinite alternate;
 
   left: 90%;
   top: 50%;
@@ -199,11 +199,11 @@ li:nth-of-type(5n + 5) .card {
 
 .x10 {
   -webkit-animation: animateBubble 26s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
+    background-sideways 2s ease-in-out infinite alternate;
   -moz-animation: animateBubble 26s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
+    background-sideways 2s ease-in-out infinite alternate;
   animation: animateBubble 26s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
+    background-sideways 2s ease-in-out infinite alternate;
 
   left: 80%;
   top: 80%;
@@ -332,7 +332,7 @@ li:nth-of-type(5n + 5) .card {
 }
 }
 
-@-webkit-keyframes sideWays {
+@-webkit-keyframes background-sideways {
 
 0% {
     margin-left: 0px;
@@ -343,7 +343,7 @@ li:nth-of-type(5n + 5) .card {
 }
 }
 
-@-moz-keyframes sideWays {
+@-moz-keyframes background-sideways {
 
 0% {
     margin-left: 0px;
@@ -354,7 +354,7 @@ li:nth-of-type(5n + 5) .card {
 }
 }
 
-@keyframes sideWays {
+@keyframes background-sideways {
 
 0% {
     margin-left: 0px;
@@ -362,5 +362,38 @@ li:nth-of-type(5n + 5) .card {
 
 100% {
     margin-left: 50px;
+}
+}
+
+@-webkit-keyframes foreground-sideways {
+
+0% {
+   left: -25px;
+}
+
+100% {
+    left: 25px;
+}
+}
+
+@-moz-keyframes foreground-sideways {
+
+0% {
+    left: -25px;
+}
+
+100% {
+    left: 25px;
+}
+}
+
+@keyframes foreground-sideways {
+
+0% {
+    margin-left: -25px;
+}
+
+100% {
+    margin-left: 25px;
 }
 }
