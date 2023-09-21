@@ -52,7 +52,7 @@ li:nth-of-type(5n + 5) .card {
 }
 
 
-
+/* Dit is de animatie van de achtergrond bubbels */
 .x1 {
   -webkit-animation: animateBubble 25s linear infinite,
     sideWays 2s ease-in-out infinite alternate;
@@ -261,6 +261,7 @@ li:nth-of-type(5n + 5) .card {
 }
 }
 
+/* Dit laat de bubbels omhoog bewegen */
 @keyframes bubble-move {
 
 0% {
@@ -308,6 +309,7 @@ li:nth-of-type(5n + 5) .card {
 }
 }
 
+/* Dit laat de achtergrond bubbels omhoog en vanaf de zijkant bewegen */
 @-moz-keyframes animateBubble {
 
 0% {
